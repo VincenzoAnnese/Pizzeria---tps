@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Peperoncino Pizzeria: tradizione, ingredienti scelti e gusto.">
+
+    <title>Prenota | Peperoncino</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">🌶 Peperoncino</a>
+        <button class="toggle" aria-label="Apri menu">☰</button>
+        <nav>
+            <a class="" href="index.html">Home</a>
+            <a class="" href="chi-siamo.html">La pizzeria</a>
+            <a class="" href="menu.html">Menù</a>
+            <a class="" href="gallery.html">Gallery</a>
+            <a class="" href="contatti.html">Contatti</a>
+            <a class="active" href="prenota.html">Prenota</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Intestazione prenotazioni -->
+        <section class="pagehero bookinghero">
+            <div>
+                <p class="eyebrow">IL TUO POSTO A TAVOLA</p>
+                <h1>
+                    La serata<br>
+                    inizia <em>qui.</em>
+                </h1>
+                <p>Compila il modulo per inviare una richiesta di prenotazione.</p>
+            </div>
+        </section>
+        <!-- Sezione prenotazioni -->
+        <section class="section two">
+            <div>
+                <p class="eyebrow">PRENOTAZIONI</p>
+                <h2>
+                    Ci pensiamo <em>noi.</em>
+                </h2>
+                <p>
+                    Inserisci i tuoi dati e la data desiderata.
+                    Ti ricontatteremo per confermare la disponibilità.
+                </p>
+                <p class="note">
+                    Modulo dimostrativo: per inviare davvero le prenotazioni
+                    serve collegarlo a un backend o a un servizio email.
+                </p>
+            </div>
+            <!-- Form di prenotazione -->
+            <form id="booking">
+                <label>
+                    Nome e cognome
+                    <input
+                        name="name"
+                        required
+                        placeholder="Il tuo nome"
+                    >
+                </label>
+                <label>
+                    Email
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="nome@email.com"
+                    >
+                </label>
+                <label>
+                    Telefono
+                    <input
+                        type="tel"
+                        name="phone"
+                        required
+                        placeholder="+39 ..."
+                    >
+                </label>
+                <div class="formrow">
+                    <label>
+                        Data
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+                    </label>
+                    <label>
+                        Orario
+                        <select required name="time">
+                            <option value="">Scegli</option>
+                            <option>19:00</option>
+                            <option>19:30</option>
+                            <option>20:00</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                            <option>21:30</option>
+                            <option>22:00</option>
+                        </select>
+                    </label>
+                </div>
+                <label>
+                    Numero persone
+                    <select required name="guests">
+                        <option value="">Scegli</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7+</option>
+                    </select>
+                </label>
+                <label>
+                    Note
+                    <textarea
+                        name="notes"
+                        rows="4"
+                        placeholder="Allergie o richieste particolari..."
+                    ></textarea>
+                </label>
+                <label class="check">
+                    <input type="checkbox" required>
+                    Ho letto l'informativa privacy (demo).
+                </label>
+
+                <button class="btn" type="submit">
+                    Invia richiesta →
+                </button>
+                <p id="message" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a class="logo" href="index.html">🌶 Peperoncino</a>
+            <p>La passione per la pizza, ogni giorno.</p>
+        </div>
+        <div>
+            <b>Esplora</b>
+            <p>
+                <a href="menu.html">Menù</a> ·
+                <a href="gallery.html">Gallery</a> ·
+                <a href="contatti.html">Contatti</a>
+            </p>
+        </div>
+        <div>
+            <b>Seguici</b>
+            <p>Instagram · Facebook</p>
+            <p>Tel. 080 000 0000</p>
+        </div>
+        <small>© 2026 Peperoncino Pizzeria · Sito dimostrativo</small>
+    </footer>
+</body>
+</html>
