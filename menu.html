@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Peperoncino Pizzeria: tradizione, ingredienti scelti e gusto.">
+
+    <title>Menù | Peperoncino</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">🌶 Peperoncino</a>
+        <button class="toggle" aria-label="Apri menu">☰</button>
+        <nav>
+            <a class="" href="index.html">Home</a>
+            <a class="" href="chi-siamo.html">La pizzeria</a>
+            <a class="active" href="menu.html">Menù</a>
+            <a class="" href="gallery.html">Gallery</a>
+            <a class="" href="contatti.html">Contatti</a>
+            <a class="" href="prenota.html">Prenota</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Intestazione del menù -->
+        <section class="pagehero menuhero">
+            <div>
+                <p class="eyebrow">IL NOSTRO MENÙ</p>
+                <h1>
+                    Scegli il tuo<br>
+                    <em>prossimo morso.</em>
+                </h1>
+                <p>Classici intramontabili e proposte tutte da scoprire.</p>
+            </div>
+        </section>
+        <!-- Sezione menù -->
+        <section class="section">
+            <div class="menuhead">
+                <div>
+                    <p class="eyebrow">DALLA CUCINA</p>
+                    <h2>
+                        Qualcosa di <em>buono.</em>
+                    </h2>
+                </div>
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Cerca nel menù..."
+                >
+            </div>
+            <!-- Filtri per categoria -->
+            <div class="filters">
+                <button class="active" data-filter="tutti">Tutto</button>
+                <button data-filter="classiche">Classiche</button>
+                <button data-filter="speciali">Speciali</button>
+                <button data-filter="fritti">Fritti</button>
+                <button data-filter="dolci">Dolci</button>
+            </div>
+            <!-- Lista -->
+            <div class="menu-list">
+                <article data-cat="classiche">
+                    <div>
+                        <h3>Margherita</h3>
+                        <p>Pomodoro, fior di latte, basilico</p>
+                    </div>
+                    <b>€ 7,50</b>
+                </article>
+                <article data-cat="classiche">
+                    <div>
+                        <h3>Marinara</h3>
+                        <p>Pomodoro, aglio, origano, olio EVO</p>
+                    </div>
+                    <b>€ 6,50</b>
+                </article>
+                <article data-cat="classiche">
+                    <div>
+                        <h3>Diavola</h3>
+                        <p>Pomodoro, mozzarella, salame piccante</p>
+                    </div>
+                    <b>€ 9,00</b>
+                </article>
+                <article data-cat="classiche">
+                    <div>
+                        <h3>Quattro Formaggi</h3>
+                        <p>Fior di latte, gorgonzola, fontina, grana</p>
+                    </div>
+                    <b>€ 10,00</b>
+                </article>
+                <article data-cat="speciali">
+                    <div>
+                        <h3>Burratina</h3>
+                        <p>Pomodoro, burrata, pomodorini, basilico</p>
+                    </div>
+                    <b>€ 11,00</b>
+                </article>
+                <article data-cat="speciali">
+                    <div>
+                        <h3>La Peperoncino</h3>
+                        <p>Pomodoro, mozzarella, 'nduja, cipolla rossa, miele</p>
+                    </div>
+                    <b>€ 11,50</b>
+                </article>
+                <article data-cat="fritti">
+                    <div>
+                        <h3>Patatine fritte</h3>
+                        <p>Porzione classica</p>
+                    </div>
+                    <b>€ 4,00</b>
+                </article>
+                <article data-cat="fritti">
+                    <div>
+                        <h3>Arancini</h3>
+                        <p>Riso, ragù e cuore filante</p>
+                    </div>
+                    <b>€ 5,00</b>
+                </article>
+                <article data-cat="dolci">
+                    <div>
+                        <h3>Tiramisù</h3>
+                        <p>Mascarpone, caffè e cacao</p>
+                    </div>
+                    <b>€ 5,00</b>
+                </article>
+                <article data-cat="dolci">
+                    <div>
+                        <h3>Pizza alla Nutella</h3>
+                        <p>Impasto dolce e crema alla nocciola</p>
+                    </div>
+                    <b>€ 6,00</b>
+                </article>
+            </div>
+            <p class="note">
+                Prezzi e ingredienti sono indicativi. Per allergeni e intolleranze chiedi al personale.
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a class="logo" href="index.html">🌶 Peperoncino</a>
+            <p>La passione per la pizza, ogni giorno.</p>
+        </div>
+        <div>
+            <b>Esplora</b>
+            <p>
+                <a href="menu.html">Menù</a> ·
+                <a href="gallery.html">Gallery</a> ·
+                <a href="contatti.html">Contatti</a>
+            </p>
+        </div>
+        <div>
+            <b>Seguici</b>
+            <p>Instagram · Facebook</p>
+            <p>Tel. 080 000 0000</p>
+        </div>
+        <small>© 2026 Peperoncino Pizzeria · Sito dimostrativo</small>
+    </footer>
+</body>
+</html>
