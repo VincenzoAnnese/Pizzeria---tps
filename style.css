@@ -452,14 +452,8 @@ footer {
 footer p,
 footer a {
     color: #c6c1b9;
-    font-size: .9rem;
-}
-
-footer small {
-    grid-column: 1 / -1;
-    border-top: 1px solid #ffffff25;
-    padding-top: 18px;
-    color: #aaa;
+    font-size: 1.1rem;
+    display: block;
 }
 
 .banner .btn {
